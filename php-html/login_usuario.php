@@ -13,9 +13,9 @@ $email = $_POST['email'];
 $senha = md5($_POST['senha']);
 
 if (strlen($email) >= 3 and strlen($senha) >= 3){
-    $conection = mysqli_connect("localhost", "Teste", "", "squad5");
+    $conection = mysqli_connect("sql213.epizy.com", "epiz_27132376", "fstyjHcLFGyiC", "epiz_27132376_Login"); 
     if ($conection == true){
-        $SQLSelect = "SELECT EMAIL, SENHA, NOME FROM LOGIN WHERE EMAIL = '$email' and SENHA = '$senha'";
+        $SQLSelect = "SELECT EMAIL, SENHA, NOME FROM login WHERE EMAIL = '$email' and SENHA = '$senha'";
         $SQLSelectResult = mysqli_query($conection, $SQLSelect);
         
         $contador = 0;
@@ -43,10 +43,10 @@ if (strlen($email) >= 3 and strlen($senha) >= 3){
             }
             $contador += + 1;
         }
-        /*echo "<script> 
+        echo "<script> 
                 alert('Email ou senha incorretos!');
                 window.location.href = 'login.php'
-            </script>";*/
+            </script>";
     }
     else {
         die("Erro ao conectar-se ao banco de dados" . mysqli_connect_error());

@@ -32,6 +32,8 @@
 
 
         <p>É de extrema importância responder as 10 perguntas de acordo com seus hábitos de consumo, para que assim seja retornado um relatório mais apurado possível.</p>
+        <p>Para mais informações sobre o Teste AUDIT, clique no botão abaixo:</p>
+        <a class="text-dark btn btn-sm btn-light my-1" href="http://www.aberta.senad.gov.br/medias/original/201704/20170424-095653-001.pdf">Clique Aqui!</a>
         <hr class="my-4 bg-white">
         <form action="AuditInsert.php" method="POST">
             <div class="form-group">
@@ -56,7 +58,7 @@
             <div class="form-check">
                 <p class="texto-m">3 – Com que freqüência que você consome 6 ou mais doses de bebida alcoólica em uma única ocasião?</p>
                 <input type="radio" name="select3" value="0" required>Nunca. <br>
-                <input type="radio" name="select3" value="1" required>Menos que semanalmente. <br>
+                <input type="radio" name="select3" value="1" required>Menos que mensalmente. <br>
                 <input type="radio" name="select3" value="2" required>Mensalmente. <br>
                 <input type="radio" name="select3" value="3" required>Semanalmente. <br>
                 <input type="radio" name="select3" value="4" required>Diariamente ou quase diariamente. <br><br>

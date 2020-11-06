@@ -1,0 +1,27 @@
+body{
+    background-color: #F9F0F0;
+}
+
+footer {
+    background-color: #B98EFF;
+}
+
+.painel-texto {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* -- Altura*/
+    width: 50vw; /* -- Largura*/
+}
+nav {
+    background-color: #B98EFF;
+}
+nav img {
+    vertical-align: middle;
+}
+.ajuste {
+    margin-left: 75%;
+}
+.rodape {
+    color: white;
+    text-align: center;
+}

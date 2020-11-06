@@ -6,13 +6,13 @@ $senha = md5($_POST['senha']);
 $confirme = md5($_POST['confirme']);
 
 if (strlen($nome) >= 3 and strlen($email) >= 15 and strlen($senha) >= 4 and $senha == $confirme){
-    $link = mysqli_connect("localhost", "Teste", "", "squad5");
+    $link = mysqli_connect("sql213.epizy.com", "epiz_27132376", "fstyjHcLFGyiC", "epiz_27132376_Login");
     if (!$link){
         die ("Falha na conexão com o BD " . mysqli_connect_errno());
     }
     else{
         #echo "Sucesso: Sucesso ao conectar-se com a base de dados MySQL.";
-        $SQLSelect = "SELECT * FROM LOGIN";
+        $SQLSelect = "SELECT * FROM login";
         $SQLSelectResult = mysqli_query($link, $SQLSelect);
         while($rowResult = mysqli_fetch_assoc($SQLSelectResult)){
             if ($rowResult['EMAIL'] == $email){
@@ -22,11 +22,11 @@ if (strlen($nome) >= 3 and strlen($email) >= 15 and strlen($senha) >= 4 and $sen
                     </script>";
             }
         }
-        $sqlQuerySelect = "INSERT INTO LOGIN (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
+        $sqlQuerySelect = "INSERT INTO login (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
         $sqlQuerySelectResult = $link -> query($sqlQuerySelect);
         echo "<script> 
                 alert('Cadastro efetuado com sucesso');
-                window.location.href = 'home.php'
+                window.location.href = 'login.php'
             </script>";
     }
 }

@@ -15,10 +15,10 @@ $questao10 = $_POST['select10'];
 
 $resultado = $questao1 + $questao2 + $questao3 + $questao4 + $questao5 + $questao6 + $questao7 + $questao8 + $questao9 + $questao10;
 
-$servername = "localhost";
-$username = "Teste"; 
-$password = ""; 
-$database = "squad5";
+$servername = "sql213.epizy.com";
+$username = "epiz_27132376"; 
+$password = "fstyjHcLFGyiC"; 
+$database = "epiz_27132376_Login";
 
 $nome_global = $_SESSION['nome'];
 $email_global = $_SESSION['email'];
@@ -26,7 +26,7 @@ $senha_global = $_SESSION['senha'];
 
 $conection = mysqli_connect($servername, $username, $password, $database);
 
-$SQLUpdate = "UPDATE LOGIN SET audit = '$resultado' WHERE (NOME = '$nome_global' and EMAIL = '$email_global' and SENHA = '$senha_global')";
+$SQLUpdate = "UPDATE login SET audit = '$resultado' WHERE (NOME = '$nome_global' and EMAIL = '$email_global' and SENHA = '$senha_global')";
 
 $SQLQueryUpdateResult = mysqli_query($conection, $SQLUpdate);
 

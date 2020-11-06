@@ -1,17 +1,17 @@
 <?php
     session_start();
 
-    $servername = "localhost";
-    $username = "Teste"; 
-    $password = ""; 
-    $database = "squad5";
+    $servername = "sql213.epizy.com";
+    $username = "epiz_27132376"; 
+    $password = "fstyjHcLFGyiC"; 
+    $database = "epiz_27132376_Login";
     $conection = mysqli_connect($servername, $username, $password, $database);
 
     $nome_global = $_SESSION['nome'];
     $email_global = $_SESSION['email'];
     $senha_global = $_SESSION['senha'];
 
-    $SQLSelect = "SELECT * FROM LOGIN WHERE(NOME = '$nome_global' AND EMAIL = '$email_global' AND SENHA = '$senha_global')";
+    $SQLSelect = "SELECT * FROM login WHERE(NOME = '$nome_global' AND EMAIL = '$email_global' AND SENHA = '$senha_global')";
 
     $SQLQuerySelectResult = mysqli_query($conection, $SQLSelect);
 ?>
@@ -30,9 +30,19 @@ personalizadas, focadas no padrão de consumo individual.-->
         <meta lang="pt-br">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <title>BebendoBem | Resultado AUDIT</title>
+        <style>
+            body{
+                background-color: #B98EFF;;
+            }
+        </style>
     </head>
 
-    <body> 
+    <body>
+    <header>
+            <a href="home.php" class="text-dark btn btn-sm btn-light my-1">Ir para home</a>
+            <a href="audit.php" class="text-dark btn btn-sm btn-light my-1">Voltar para o teste</a>
+        </header>
+        <div class="container bg-light rounded"> 
         <h2> Resultado AUDIT </h2>
         <?php 
             $contador = 0;
@@ -53,15 +63,20 @@ personalizadas, focadas no padrão de consumo individual.-->
                     else if ($rowResult[$contador][4]  >= 16 and $rowResult[$contador][4] <= 19){
                         echo "ZONA III: Nessa zona de risco estão os usuários com padrão de uso nocivo; ou seja, pessoas que consomem álcool em quantidade e
                             frequência acima dos padrões de baixo risco e já apresentam problemas decorrentes do uso de álcool. Por outro lado, essas pessoas não
-                            apresentam a quantidade de sintomas necessários para o diagnóstico de dependência. A intervenção adequada nesse nível é a utilização.";
+                            apresentam a quantidade de sintomas necessários para o diagnóstico de dependência. A intervenção adequada nesse nível é a utilização."; ?>
+                            <b>Passo a passo para a realização Intervenção Breve:</b>
+                            <a class="btn btn-light border" href="http://www.aberta.senad.gov.br/medias/original/201704/20170424-095204-001.pdf">Clique aqui</a> <?php
                     }
                     else if ($rowResult[$contador][4]  >= 20 and $rowResult[$contador][4] <= 40){
                         echo "ZONA IV: Pessoas que se encontram nesse nível apresentam grande chance de ter um diagnóstico de dependência. Nesse caso, é preciso
                             fazer uma avaliação mais cuidadosa e, se confirmado o diagnóstico, deve-se motivar o usuário a procurar atendimento especializado para
-                            acompanhamento e encaminhá-lo ao serviço adequado.";
+                            acompanhamento e encaminhá-lo ao serviço adequado."; ?>
+                            <b>Lista de Caps-AD (Centros de Atenção Psicossocial em SP):</b>
+                            <a class="btn btn-light border" href="https://www.prefeitura.sp.gov.br/cidade/secretarias/saude/atencao_basica/index.php?p=204204">Clique aqui</a> <?php
                     }
                     }
                 }
         ?>
+        </div>
     </body>
 </html>
