@@ -6,7 +6,7 @@ $senha = md5($_POST['senha']);
 $confirme = md5($_POST['confirme']);
 
 if (strlen($nome) >= 3 and strlen($email) >= 15 and strlen($senha) >= 4 and $senha == $confirme){
-    $link = mysqli_connect("sql213.epizy.com", "epiz_27132376", "fstyjHcLFGyiC", "epiz_27132376_Login");
+    $link = mysqli_connect("", "", "", "");
     if (!$link){
         die ("Falha na conexão com o BD " . mysqli_connect_errno());
     }
