@@ -15,10 +15,10 @@ $questao10 = $_POST['select10'];
 
 $resultado = $questao1 + $questao2 + $questao3 + $questao4 + $questao5 + $questao6 + $questao7 + $questao8 + $questao9 + $questao10;
 
-$servername = "sql213.epizy.com";
-$username = "epiz_27132376"; 
-$password = "fstyjHcLFGyiC"; 
-$database = "epiz_27132376_Login";
+$servername = "";
+$username = ""; 
+$password = ""; 
+$database = "";
 
 $nome_global = $_SESSION['nome'];
 $email_global = $_SESSION['email'];
