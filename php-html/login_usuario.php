@@ -13,7 +13,7 @@ $email = $_POST['email'];
 $senha = md5($_POST['senha']);
 
 if (strlen($email) >= 3 and strlen($senha) >= 3){
-    $conection = mysqli_connect("sql213.epizy.com", "epiz_27132376", "fstyjHcLFGyiC", "epiz_27132376_Login"); 
+    $conection = mysqli_connect("", "", "", ""); 
     if ($conection == true){
         $SQLSelect = "SELECT EMAIL, SENHA, NOME FROM login WHERE EMAIL = '$email' and SENHA = '$senha'";
         $SQLSelectResult = mysqli_query($conection, $SQLSelect);
