@@ -1,10 +1,10 @@
 <?php
     session_start();
 
-    $servername = "sql213.epizy.com";
-    $username = "epiz_27132376"; 
-    $password = "fstyjHcLFGyiC"; 
-    $database = "epiz_27132376_Login";
+    $servername = "";
+    $username = ""; 
+    $password = ""; 
+    $database = "";
     $conection = mysqli_connect($servername, $username, $password, $database);
 
     $nome_global = $_SESSION['nome'];
