@@ -7,6 +7,10 @@
         font-family: 'Poppins', sans-serif;
 }
 
+html
+{
+    scroll-behavior: smooth;
+}
 .navbar{
     background: #744D8C;
     padding: -0.5rem 8rem;
