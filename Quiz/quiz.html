@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Quiz</title>
+</head>
+<body> 
+    <!-- Texto inicial antes de começar o Quiz -->
+    <div class="home-box custom-box">
+        <h3>Quiz Conscire!!!</h3>
+        <p>E aí, já tomou um gole de consciência em nosso site? Então venha responder nosso Quiz, marcar muitos pontos e escalar nosso ranking!!!</p>
+        <button type="button" class="btn1" onclick="startQuiz()">Iniciar Quiz</button>
+    </div>
+    <div class="quiz-box custom-box hide">
+        <div class="question-number">    
+        </div>
+
+        <div class="question-text">
+        </div>
+
+        <div class="option-container">
+        </div>
+
+        <div class="next-question-btn">
+            <button type="button" class="btn1" onclick="next()">Próximo!</button>
+        </div>
+    </div>
+
+    <!-- Caixa de resultados após finalização do Quiz -->
+    <div class="result-box custom-box hide">
+        <h1>Resultado do Quiz</h1>
+        <table>
+            <tr>
+                <td>Total de Questões</td>
+                <td><span class="total-question"></span></td>
+            </tr>
+            <tr>
+                <td>Corretas</td>
+                <td><span class="total-correct"></span></td>
+            </tr>
+            <tr>
+                <td>Erradas</td>
+                <td><span class="total-wrong"></span></td>
+            </tr>
+            <tr>
+                <td>Porcentagem</td>
+                <td><span class="percentage"></span></td>
+            </tr>
+            <tr>
+                <td>Seu Total de Pontos</td>
+                <td><span class="total-score"></span></td>
+            </tr>
+        </table>
+
+        <!-- Botões Tentar novamente e voltar a página inicial -->
+        <button type="button" class="btn" onclick="tryAgainQuiz()">Tente Novamente!</button>
+        <button type="button" class="btn" onclick="goToHome()">Voltar para a página inicial!</button>
+    </div>
+
+    <script src="js/question.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html> 
