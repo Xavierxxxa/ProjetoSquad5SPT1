@@ -9,11 +9,16 @@ session_start();
 #print_r($_POST);
 #echo "</pre>";
 
+$servername = "localhost";
+$username = "Teste";
+$password = "";
+$database = "squad5";
+
 $email = $_POST['email'];
 $senha = md5($_POST['senha']);
 
 if (strlen($email) >= 3 and strlen($senha) >= 3){
-    $conection = mysqli_connect("", "", "", ""); 
+    $conection = mysqli_connect($servername, $username, $password, $database);
     if ($conection == true){
         $SQLSelect = "SELECT EMAIL, SENHA, NOME FROM login WHERE EMAIL = '$email' and SENHA = '$senha'";
         $SQLSelectResult = mysqli_query($conection, $SQLSelect);
