@@ -2,6 +2,8 @@
 
 session_start();
 
+require "Connection.php";
+
 $questao1 = $_POST['select'];
 $questao2 = $_POST['select2'];
 $questao3 = $_POST['select3'];
@@ -15,11 +17,6 @@ $questao10 = $_POST['select10'];
 
 $resultado = $questao1 + $questao2 + $questao3 + $questao4 + $questao5 + $questao6 + $questao7 + $questao8 + $questao9 + $questao10;
 
-$servername = "";
-$username = ""; 
-$password = ""; 
-$database = "";
-
 $nome_global = $_SESSION['nome'];
 $email_global = $_SESSION['email'];
 $senha_global = $_SESSION['senha'];
@@ -32,7 +29,7 @@ $SQLQueryUpdateResult = mysqli_query($conection, $SQLUpdate);
 
 echo "<script> 
         alert('Teste Feito com sucesso!');
-        window.location.href = 'resultado_audit.php'
+        window.location.href = '../../Front-end/resultado_audit.php'
     </script>";
 ?>
 

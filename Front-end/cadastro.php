@@ -27,7 +27,7 @@
     <div class="container-fluid py-4 px-5 rounded row cor">
         <div class="col cor">
         <h1 class="display-4 font-weight-bold text-white">Cadastro</h1>
-        <form action="SQLInsert.php" method="POST">
+        <form action="../Back-end/php/SQLInsert.php" method="POST">
             <div class="form-group">
                 <input type="text" id="nome" name="nome" class="m-1 p-1 rounded form-control" placeholder="Digite o seu nome aqui">
              </div>

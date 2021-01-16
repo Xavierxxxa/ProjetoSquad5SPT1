@@ -79,10 +79,10 @@
                     </div>
                     <div class="form-row">
                         <div class="col-lg-7">
-                        <button type="button" type="submit" class="btn1 mt-3 mb-5">Login</button>
+                            <button type="submit" class="btn1 mt-3 mb-5">Login</button>
                         </div>
                     </div>
-                    <p>Não possui uma conta?<br> <a href="#"> Registre-se aqui</a></p>
+                    <p>Não possui uma conta?<br> <a href="./cadastro.php"> Registre-se aqui</a></p>
                     <p><a href="./index.html"> Voltar para Conscire</a></p>
                 </form>
             </div>

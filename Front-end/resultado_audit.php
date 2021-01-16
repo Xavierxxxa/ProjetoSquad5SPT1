@@ -1,10 +1,8 @@
 <?php
     session_start();
 
-    $servername = "";
-    $username = ""; 
-    $password = ""; 
-    $database = "";
+    require "../Back-end/php/Connection.php";
+
     $conection = mysqli_connect($servername, $username, $password, $database);
 
     $nome_global = $_SESSION['nome'];

@@ -35,7 +35,7 @@
         <p>Para mais informações sobre o Teste AUDIT, clique no botão abaixo:</p>
         <a class="text-dark btn btn-sm btn-light my-1" href="http://www.aberta.senad.gov.br/medias/original/201704/20170424-095653-001.pdf">Clique Aqui!</a>
         <hr class="my-4 bg-white">
-        <form action="AuditInsert.php" method="POST">
+        <form action="../Back-end/php/AuditInsert.php" method="POST">
             <div class="form-group">
                 <div class="form-check">
                     <p class="texto-m">1 – Com que frequência você consome bebidas alcoólicas (cerveja, vinho, cachaça, etc.)?</p>

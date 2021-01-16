@@ -9,10 +9,7 @@ session_start();
 #print_r($_POST);
 #echo "</pre>";
 
-$servername = "localhost";
-$username = "Teste";
-$password = "";
-$database = "squad5";
+require "Connection.php";
 
 $email = $_POST['email'];
 $senha = md5($_POST['senha']);
@@ -43,14 +40,14 @@ if (strlen($email) >= 3 and strlen($senha) >= 3){
 
                 echo "<script> 
                         alert('Login Realizado com sucesso!');
-                        window.location.href = 'home.php'
+                        window.location.href = '../../Front-end/moodle.php'
                     </script>";
             }
             $contador += + 1;
         }
         echo "<script> 
                 alert('Email ou senha incorretos!');
-                window.location.href = 'login.php'
+                window.location.href = '../../Front-end/Login.php'
             </script>";
     }
     else {
@@ -61,7 +58,7 @@ if (strlen($email) >= 3 and strlen($senha) >= 3){
 else {
     echo "<script> 
             alert('E-mail ou senha invalidos!');
-            window.location.href = 'index.php'
+            window.location.href = '../../Front-end/Login.php'
         </script>";
 }
 ?>

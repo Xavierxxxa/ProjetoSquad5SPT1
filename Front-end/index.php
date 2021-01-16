@@ -38,13 +38,13 @@
                     <a class="nav-link" href="#cards">O que temos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./Contato.html">Contato</a>
+                    <a class="nav-link" href="./Contato.php">Contato</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./Login.html">Cadastre-se</a>
+                    <a class="nav-link" href="./cadastro.php">Cadastre-se</a>
                   </li>
                 </ul>
-                    <button class="btn btn-warning text-white" type="submit"> <a class="text-light" href="./Login.html">Login</a></button>
+                    <button class="btn btn-warning text-white" type="submit"> <a class="text-light" href="./Login.php">Login</a></button>
                 </div>
             </div>
         </nav>

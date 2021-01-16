@@ -22,7 +22,7 @@
             <ul>
                 <li><a href="#"><i class="fas fa-search"></i></a></li>
                 <li><a href="#"><i class="fas fa-bell"></i></a></li>
-                <li><a href="#"><i class="fas fa-power-off"></i></a></li>
+                <li><a href="../Back-end/php/sair.php"><i class="fas fa-power-off"></i></a></li>
             </ul>
         </div>
     </div>  
@@ -55,7 +55,7 @@
         <div class="sub-menu">
             <a href="#"><i class="fas fa-book"></i><span>Quiz</span></a>
             <a href="#"><i class="fas fa-book"></i><span>História das bebidas</span></a>
-            <a href="#"><i class="fas fa-book"></i><span>Teste Audit</span></a> 
+            <a href="audit.php"><i class="fas fa-book"></i><span>Teste Audit</span></a> 
         </div>
     </li>
     <li= class="item" id="settings">
