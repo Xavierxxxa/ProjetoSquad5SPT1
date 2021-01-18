@@ -4,7 +4,8 @@ require "Connection.php";
 
 $conection = mysqli_connect($servername, $username, $password, $database);
 
-$sqlSelect = "SELECT * FROM squad5.comentarios;";
+$sqlSelect = "SELECT * FROM squad5.login right join  squad5.comentarios 
+on login.id = comentarios.id;";
 $stmt = $conection -> query($sqlSelect);
 
 foreach($stmt as $key => $value){
