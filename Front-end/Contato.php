@@ -48,11 +48,10 @@
                 <div class="form-row pt-4">
                   <div class="col-lg-6">
                     <p><input type="checkbox"> Não sou um robô </p>
-                    <p><a href="./index.html"> Voltar para Conscire</a></p>
+                    <p><a href="./index.php"> Voltar para Conscire</a></p>
                   </div>
                   <div class= "offset-2 col-lg-4">
-                    <button class="btn1">ENVIAR MENSAGEM</button>
-                     
+                    <button class="btn1" type="submit">ENVIAR MENSAGEM</button>
                   </div>
                 </div>
               </div>
