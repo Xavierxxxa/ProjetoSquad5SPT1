@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./Css/style.css">
-
     <title>Contato | Conscire</title>
     </head>
 <body>
@@ -17,12 +16,10 @@
           <a class="navbar-brand" href="#">
             <img id="logo" src="./imagens/LOOOGO 1.png" alt="Conscire">
           </a>
-
           <!--menu hamburguer-->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">                  
               <li class="nav-item">
@@ -55,10 +52,11 @@
                     </div>
                   </div>
                 </div>
+                <form action="http://projetos/ProjetoSquad5SPT1/Back-end/php/register_coments.php" method = "POST">
               <div class="form p-3">
                 <div class="form-row my-5">
                   <div class="col-lg-6">
-                    <input type="text" class="effect-1" placeholder="Nome">
+                    <input type="text" class="effect-1" placeholder="Nome" name='nome'>
                     <span class="Focus-border"></span>
                   </div>
                   <div class="col-lg-6">
@@ -66,15 +64,9 @@
                     <span class="Focus-border"></span>
                   </div>
                 </div>
-                <div class="form-row pb-4">
-                  <div class="col-lg-12">
-                    <input type="text" class="effect-1" placeholder="E-mail">
-                    <span class="Focus-border"></span>
-                  </div>
-                </div>
                 <div class="form-row pt-5">
                   <div class="col-lg-12">
-                    <input type="text" class="effect-1" placeholder="Mensagem">
+                    <textarea name="msg" cols="60" rows="4" placeholder= "Mensagem"></textarea>
                     <span class="Focus-border"></span>
                   </div>
                 </div>
@@ -87,6 +79,7 @@
                     <button class="btn1">ENVIAR</button>
                   </div>
               </div>
+              </form>
               </div class="endereco">
                     <p class="text-center">Entre em contato conosco:<br>
                     Telefone: (11)3656-5562<br>
@@ -95,9 +88,12 @@
                 </div>
             </div>
           </div>
+          <div class="container text-center bg-light">
+                <?php include_once "Coments.php";  ?>
+          </div>
+        </div>
         </div>
       </section>
-
       <!-- FOOTER -->
       <div class="footer-container">
         <div class="footer">
@@ -107,21 +103,18 @@
             <a href="#">termos de servicos</a>
             <a href="#">contato</a>
           </div>
-
           <div class="footer-heading footer-1">
             <h2>Contate-nos</h2>
             <a href="#">Quem somos</a>
             <a href="#">termos de servicos</a>
             <a href="#">contato</a>
           </div>
-
           <div class="footer-heading footer-3">
             <h2>Social media</h2>
             <a href="#">Instragram</a>
             <a href="#">Facebook</a>
             <a href="#">Discord</a>
           </div>
-
           <div class="footer-email-form">
             <h2>Assine nossos e-mails!</h2>
             <input type="email" placeholder="Escreva seu email aqui" id="footer-email">
@@ -129,7 +122,6 @@
           </div>
         </div>
   </div>
-
   <!--Links essenciais do CDN bootstrap, jquery e javascript que faz a magia funcionar -->    
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

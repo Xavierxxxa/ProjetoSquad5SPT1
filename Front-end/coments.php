@@ -1,6 +1,9 @@
 <?php
 
-require "Connection.php";
+$servername = "localhost"; //Alterar dados de entrada.
+$username = "root";
+$password = "";
+$database = "squad5";
 
 $conection = mysqli_connect($servername, $username, $password, $database);
 
@@ -21,4 +24,3 @@ foreach($stmt as $key => $value){
     echo "<hr/>";
 }
 
-//Teste para ilustração.
