@@ -14,10 +14,3 @@ echo "<script>
     alert('Comentario efetuado com sucesso!');
     window.location.href = '../../Front-end/Contato.php'
 </script>";
-
-/*Adicionar redirecionamento para página de comentarios:
-echo "<script> 
-            alert('Comentário realizado com sucesso!');
-            window.location.href = '../../Front-end/Contado.php'
-    </script>";
-*/
