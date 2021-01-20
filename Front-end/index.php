@@ -82,15 +82,15 @@
      <!--pagina - funcionalidades (vai ser de contato) -->
 
 
-    <section class="funcionalidades py-5">
+     <section class="funcionalidades py-5">
       <div class="row align-items-center container my-5 mx-auto">
         <div class="img col-lg-6 col-md-6 col-12 w-50">
           <img class="img-fluid" src= "./imagens/Quem somos.svg">
         </div>
         <div class="text col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
-          <h6>POR QUE CONSCIRE?</h6>
-          <h2> O que tem? </h2>
-          <p>+ Plataforma educativa fofinha<br> + Quizzes <br>+ Teste Audit<br>+ Entre outros!</p>
+          <h6>CONSCIRE</h6>
+          <h2> Como o projeto atua? </h2>
+          <p> Queremos instigar maior pensamento crítico, através de materiais e quizes sobre o uso do álcool entre jovens, como ferramenta de conscientização. </p>
           <a href="./Login.php">Conscientize-se</a>
         </div>
       </div>

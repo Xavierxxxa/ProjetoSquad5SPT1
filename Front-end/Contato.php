@@ -89,7 +89,7 @@
             </div>
           </div>
           <div class="container text-center bg-light">
-                <?php include_once "../Back-end/php/coments.php";  ?>
+                <?php include_once "coments.php";  ?>
           </div>
         </div>
         </div>
