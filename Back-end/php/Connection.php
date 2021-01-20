@@ -1,6 +1,6 @@
 <?php
 
 $servername = "localhost";
-$username = "Teste";
+$username = "root";
 $password = "";
 $database = "squad5";

@@ -120,7 +120,7 @@
       <img class="img-fluid w-90 " src="./imagens/card2 audit.svg">
       <h5 class="font-weight-bold pt-4">TESTE AUDIT</h5>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-  </div>
+    </div>
        
       
       </div>
