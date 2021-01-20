@@ -9,7 +9,7 @@
     $email_global = $_SESSION['email'];
     $senha_global = $_SESSION['senha'];
 
-    $SQLSelect = "SELECT * FROM login WHERE(NOME = '$nome_global' AND EMAIL = '$email_global' AND SENHA = '$senha_global')";
+    $SQLSelect = "SELECT * FROM cadastro WHERE(NOME = '$nome_global' AND EMAIL = '$email_global' AND SENHA = '$senha_global')";
 
     $SQLQuerySelectResult = mysqli_query($conection, $SQLSelect);
 ?>
@@ -27,7 +27,7 @@ personalizadas, focadas no padrão de consumo individual.-->
         <meta charset="utf-8">
         <meta lang="pt-br">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <title>BebendoBem | Resultado AUDIT</title>
+        <title>Conscire | Resultado AUDIT</title>
         <style>
             body{
                 background-color: #B98EFF;;
@@ -37,7 +37,7 @@ personalizadas, focadas no padrão de consumo individual.-->
 
     <body>
     <header>
-            <a href="home.php" class="text-dark btn btn-sm btn-light my-1">Ir para home</a>
+            <a href="moodle.php" class="text-dark btn btn-sm btn-light my-1">Ir para home</a>
             <a href="audit.php" class="text-dark btn btn-sm btn-light my-1">Voltar para o teste</a>
         </header>
         <div class="container bg-light rounded"> 

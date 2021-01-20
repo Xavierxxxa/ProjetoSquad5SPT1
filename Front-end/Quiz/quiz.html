@@ -14,14 +14,10 @@
         <button type="button" class="btn1" onclick="startQuiz()">Iniciar Quiz</button>
     </div>
     <div class="quiz-box custom-box hide">
-        <div class="question-number">    
-        </div>
+        <div class="question-number" required></div>
+        <div class="question-text" required></div>
 
-        <div class="question-text">
-        </div>
-
-        <div class="option-container">
-        </div>
+        <div class="option-container" required></div>
 
         <div class="next-question-btn">
             <button type="button" class="btn1" onclick="next()">Próximo!</button>
@@ -55,8 +51,8 @@
         </table>
 
         <!-- Botões Tentar novamente e voltar a página inicial -->
-        <button type="button" class="btn1" onclick="tryAgainQuiz()">Tente Novamente!</button>
-        <button type="button" class="btn1" onclick="goToHome()">Voltar para a página inicial!</button>
+        <button type="button" class="btn" onclick="tryAgainQuiz()">Tente Novamente!</button>
+        <button type="button" class="btn"><a href="./moodle.php"></a>Voltar para a página inicial!</button>
     </div>
 
     <script src="js/question.js"></script>

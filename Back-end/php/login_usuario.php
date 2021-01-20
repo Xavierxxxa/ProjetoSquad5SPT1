@@ -10,7 +10,7 @@ $senha = md5($_POST['senha']);
 if (strlen($email) >= 3 and strlen($senha) >= 3){
     $conection = mysqli_connect($servername, $username, $password, $database);
     if ($conection == true){
-        $SQLSelect = "SELECT EMAIL, SENHA, NOME FROM login WHERE EMAIL = '$email' and SENHA = '$senha'";
+        $SQLSelect = "SELECT EMAIL, SENHA, NOME FROM cadastro WHERE EMAIL = '$email' and SENHA = '$senha'";
         $SQLSelectResult = mysqli_query($conection, $SQLSelect);
         
         $contador = 0;
@@ -26,10 +26,6 @@ if (strlen($email) >= 3 and strlen($senha) >= 3){
                 $_SESSION['nome'] = $rowResult[$contador][2];
                 #Nesta linha de cima nos estamos atribuindo o valor obtido na consulta em uma variavel
                 #superglobal.
-
-                #echo "<pre>";
-                #print_r($rowResult);
-                #echo "</pre>";
 
                 echo "<script> 
                         alert('Login Realizado com sucesso!');

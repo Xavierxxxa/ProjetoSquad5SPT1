@@ -23,7 +23,7 @@ $senha_global = $_SESSION['senha'];
 
 $conection = mysqli_connect($servername, $username, $password, $database);
 
-$SQLUpdate = "UPDATE login SET audit = '$resultado' WHERE (NOME = '$nome_global' and EMAIL = '$email_global' and SENHA = '$senha_global')";
+$SQLUpdate = "UPDATE cadastro SET audit = '$resultado' WHERE (NOME = '$nome_global' and EMAIL = '$email_global' and SENHA = '$senha_global')";
 
 $SQLQueryUpdateResult = mysqli_query($conection, $SQLUpdate);
 

@@ -12,7 +12,7 @@ if ($email == $emailSession){
     //Verifico se o usuario que esta querendo excluir a conta e o mesmo que esta logado na sessao.
     $conection = mysqli_connect($servername, $username, $password, $database);
     if ($conection == true){
-        $SQLDelete = "DELETE FROM login WHERE EMAIL = '$email'";
+        $SQLDelete = "DELETE FROM cadastro WHERE EMAIL = '$email'";
         $SQLDeleteResult = mysqli_query($conection, $SQLDelete);
         if ($SQLDeleteResult == true){
             session_destroy();

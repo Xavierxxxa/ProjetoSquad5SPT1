@@ -14,7 +14,7 @@ if (strlen($nome) >= 3 and strlen($email) >= 15 and strlen($senha) >= 4 and $sen
     }
     else{
         #echo "Sucesso: Sucesso ao conectar-se com a base de dados MySQL.";
-        $SQLSelect = "SELECT * FROM login";
+        $SQLSelect = "SELECT * FROM cadastro";
         $SQLSelectResult = mysqli_query($conection, $SQLSelect);
         while($rowResult = mysqli_fetch_assoc($SQLSelectResult)){
             if ($rowResult['EMAIL'] == $email){
@@ -24,7 +24,7 @@ if (strlen($nome) >= 3 and strlen($email) >= 15 and strlen($senha) >= 4 and $sen
                     </script>";
             }
         }
-        $sqlQuerySelect = "INSERT INTO login (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
+        $sqlQuerySelect = "INSERT INTO cadastro (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
         $sqlQuerySelectResult = $conection -> query($sqlQuerySelect);
         echo "<script> 
                 alert('Cadastro efetuado com sucesso');

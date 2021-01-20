@@ -21,7 +21,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
-                <img id="logo" src="./imagens/LOOOGO 1.png" alt="Conscire">
+                <img id="logo" src="./imagens/logo.png" alt="Conscire">
               </a>
 
               <!--menu hamburguer-->
@@ -52,12 +52,12 @@
  <!--pagina - HOME - Video, frase que está no video e botao do video -->
         <div class="mid">
             <video autoplay muted loop>
-                <source class="embed-responsive" src="./imagens/1.mp4" type="video/mp4">
+                <source class="embed-responsive" src="./imagens/video-index.mp4" type="video/mp4">
             </video>    
             <div class="hero text-center">
                 <h2 class= "text-warning display-3 font-weight-bold">Tomar um gole de <br> consciência?<br></h2>
                 <p class="text-light mx-auto"> Nunca foi tâo fácil!</p>
-                <a class="text-light" href="./Login.html">Iniciar</a>
+                <a class="text-light" href="./Login.php">Iniciar</a>
             </div>   
         </div>
           
@@ -66,7 +66,7 @@
    <!--Um adendo: toda página está sendo feita por section. Cada Section representa uma pagina -->
      <!--pagina - Sobre ou quem somos nós -->
     <section id="about" class="about py-5">
-      <div class="row align-items-center container my-5 mx-auto">
+      <div class="row align-items-center container my-5 mx-auto foo">
         <div class="text col-lg-6 col-md-6 col-12 w-50 pt-5 pb-5">
           <h6>CONSCIRE</h6>
           <h2> Porque prevenção é o melhor caminho</h2>
@@ -74,7 +74,7 @@
           <a href="#">Conscientize-se</a>
         </div>
         <div class="img col-lg-6 col-md-6 col-12 w-50">
-          <img class="img-fluid" src= "./imagens/Desktop - 1.svg">
+          <img class="img-fluid" src= "./imagens/about-index.svg">
         </div>
       </div>
     </section>
@@ -91,7 +91,7 @@
           <h6>POR QUE CONSCIRE?</h6>
           <h2> O que tem? </h2>
           <p>+ Plataforma educativa fofinha<br> + Quizzes <br>+ Teste Audit<br>+ Entre outros!</p>
-          <a href="./Login.html">Conscientize-se</a>
+          <a href="./Login.php">Conscientize-se</a>
         </div>
       </div>
     </section> 
@@ -107,37 +107,58 @@
         <div class="one col-lg-3 col-md-3 col-12 w-25 m-2">
           <img class="img-fluid w-90" src="./imagens/card1 quiz.svg">
           <h5 class="font-weight-bold pt-4">TEMOS QUIZ</h5>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <p>E ai, já tomou um gole de consciência no nosso site? Entao venha responder nosso Quiz, marcar muitos pontos e escalar nosso ranking!.</p>
       </div>
 
       <div class="one col-lg-3 col-md-3 col-12 w-25 m-2">
         <img class="img-fluid w-90" src="./imagens/ranking.svg">
         <h5 class="font-weight-bold pt-4">RANKINGS</h5>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <p>Você consegue ver o seu ranking de pontos e arquivos lidos dentre todos os usuários.</p>
     </div>
 
     <div class="one col-lg-3 col-md-3 col-12 w-25 m-2">
       <img class="img-fluid w-90 " src="./imagens/card2 audit.svg">
       <h5 class="font-weight-bold pt-4">TESTE AUDIT</h5>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      <p>O AUDIT - Alcool Use Disorders Identification Test é um instrumento de avaliação desenvolvido pela Organização Mundial de Saúde (OMS).</p>
+  </div>
     </div>
-       
-      
-      </div>
     </div>
     </section>
-<!--FOOTER
--->
-    <footer>
-      <div class="footer-content">
-        <img id="logo" src="./imagens/LOOOGO 1.png" alt="Conscire">
-        <p>gole de consciência</p>
-      </div>
 
-      <div class="footer-bottom">
-        <p>copyright &copy; 2020-2021 Recode.
-      </div>
-    </footer>
+<!--FOOTER-->
+   
+<div class="footer-container">
+<div class="footer">
+  <div class="footer-heading footer-1">
+    <h2>O projeto</h2>
+    <a href="#about">Quem somos</a>
+    <a href="#">termos de servicos</a>
+    <a href="./Contato.php">contato</a>
+  </div>
+
+  <div class="footer-heading footer-1">
+    <h2>Contate-nos</h2>
+    <a href="#about">Quem somos</a>
+    <a href="#">termos de servicos</a>
+    <a href="./Contato.php">contato</a>
+  </div>
+
+  <div class="footer-heading footer-3">
+    <h2>Social media</h2>
+    <a href="#">Instragram</a>
+    <a href="#">Facebook</a>
+    <a href="#">Discord</a>
+  </div>
+
+  <div class="footer-email-form">
+    <h2>Assine nossos e-mails!</h2>
+    <input type="email" placeholder="Escreva seu email aqui" id="footer-email">
+    <input type="submit" value="Cadastre-se" id="footer-email-btn">
+  </div>
+
+</div>
+</div>
+   
     
 
  <!--Links essenciais do CDN bootstrap, jquery e javascript que faz a magia funcionar -->    
