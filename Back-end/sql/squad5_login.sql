@@ -1,13 +1,3 @@
-
-/*CREATE TABLE `login` (
-  `ID` int NOT NULL AUTO_INCREMENT,
-  `NOME` varchar(100) NOT NULL,
-  `EMAIL` varchar(50) NOT NULL,
-  `SENHA` varchar(32) NOT NULL,
-  `audit` int DEFAULT NULL,
-  PRIMARY KEY (`ID`),
-  UNIQUE KEY `EMAIL` (`EMAIL`))*/
-  
 CREATE SCHEMA `squad5`;
 USE `squad5`;
   
@@ -15,7 +5,8 @@ CREATE TABLE `squad5`.`comentario` (
   `id` int AUTO_INCREMENT,
   `nome` varchar(100),
   `mensagem` varchar(300),
-  `data` datetime default now(),  
+  `data` datetime default now(),
+  `audit` int,
   PRIMARY KEY (`id`)
 )
 ENGINE=InnoDB DEFAULT CHARSET=utf8;
