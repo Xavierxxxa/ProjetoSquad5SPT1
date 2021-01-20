@@ -52,7 +52,7 @@
                     </div>
                   </div>
                 </div>
-                <form action="http://projetos/ProjetoSquad5SPT1/Back-end/php/register_coments.php" method = "POST">
+                <form action="../Back-end/php/register_coments.php" method="POST">
               <div class="form p-3">
                 <div class="form-row my-5">
                   <div class="col-lg-6">
@@ -89,7 +89,7 @@
             </div>
           </div>
           <div class="container text-center bg-light">
-                <?php include_once "Coments.php";  ?>
+                <?php include_once "coments.php";  ?>
           </div>
         </div>
         </div>

@@ -7,7 +7,7 @@ $msg = $_POST['msg'];
 
 $conection = mysqli_connect($servername, $username, $password, $database);
 
-$sqlInsert = "INSERT INTO SQUAD5.COMENTARIOS (nome, msg) values ('$nome', '$msg')";
+$sqlInsert = "INSERT INTO SQUAD5.COMENTARIO (nome, mensagem) values ('$nome', '$msg')";
 $sqlQuerySelectResult = $conection -> query($sqlInsert);
 echo "Comentário realizado com sucesso";
 

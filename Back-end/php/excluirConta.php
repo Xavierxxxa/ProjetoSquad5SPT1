@@ -37,5 +37,3 @@ else{
 
 }
 ?>
-
-#DELETE FROM PRODUTO WHERE (ID  = 4);

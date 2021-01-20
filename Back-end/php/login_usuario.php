@@ -1,13 +1,6 @@
 <?php
 
 session_start();
-#Com esta funcao nos estamo iniciando uma secao ou seja, vou inicicar algumas variaveis superglobais, onde eu 
-#posso usar em outros arquivos.
-
-#echo "<pre>";
-#A tag pre e como se fosse o modulo pprint no python, ou seja, deixa uma melhor visualizacao do array.
-#print_r($_POST);
-#echo "</pre>";
 
 require "Connection.php";
 
