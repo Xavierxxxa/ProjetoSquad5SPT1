@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./Css/style.css">
+    <link rel="stylesheet" type="text/css" href="./Css/stylecont.css">
     <title>Contato | Conscire</title>
     </head>
 <body>
@@ -13,7 +13,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="./index.php">
             <img id="logo" src="./imagens/LOOOGO 1.png" alt="Conscire">
           </a>
           <!--menu hamburguer-->
@@ -29,10 +29,10 @@
                 <a class="nav-link" href="#cards">O que temos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./Contato.html">Contato</a>
+                <a class="nav-link" href="./Contato.php">Contato</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./Cadastro1.html">Cadastre-se</a>
+                <a class="nav-link" href="./cadastro.php">Cadastre-se</a>
               </li>
             </ul>
                 <button class="btn btn-warning text-white" type="submit"> <a class="text-light" href="./Login.html">Login</a></button>
@@ -66,7 +66,7 @@
                 </div>
                 <div class="form-row pt-5">
                   <div class="col-lg-12">
-                    <textarea name="msg" cols="60" rows="4" placeholder= "Mensagem"></textarea>
+                    <textarea name="msg" cols="50" rows="4" placeholder= "Mensagem"></textarea>
                     <span class="Focus-border"></span>
                   </div>
                 </div>
