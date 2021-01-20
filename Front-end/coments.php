@@ -1,14 +1,11 @@
 <?php
 
-$servername = "localhost"; //Alterar dados de entrada.
-$username = "root";
-$password = "";
-$database = "squad5";
+require "../Back-end/php/Connection.php";
 
 $conection = mysqli_connect($servername, $username, $password, $database);
 
-$sqlSelect = "SELECT * FROM squad5.login right join  squad5.comentarios 
-on login.id = comentarios.id;";
+$sqlSelect = "SELECT * FROM squad5.cadastro right join  squad5.comentarios 
+on cadastro.id = comentarios.id;";
 $stmt = $conection -> query($sqlSelect);
 
 foreach($stmt as $key => $value){
