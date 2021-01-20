@@ -5,8 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<<<<<<< Updated upstream
     <link rel="stylesheet" type="text/css" href="./Css/style.css">
 
+=======
+    <link rel="stylesheet" type="text/css" href="./Css/stylecont.css">
+>>>>>>> Stashed changes
     <title>Contato | Conscire</title>
     </head>
 <body>
@@ -43,18 +47,18 @@
         </div>
     </nav>
   </header>
-      <section class="contact">
-        <div class="container py-5">
-          <div class="row">
-            <div class="col-lg-6 mx-auto">
-              <div class="card">
-                <div class="card-body">
-                  <div class="col-lg-12">
-                    <div class="head text-center text-white py-3">
-                      <h3>Contato</h3>
-                    </div>
+  <section class="contact">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-6 mx-auto">
+            <div class="card">
+              <div class="card-body">
+                <div class="col-lg-12">
+                  <div class="head text-center text-white py-3">
+                    <h3>Contato</h3>
                   </div>
                 </div>
+<<<<<<< Updated upstream
               <div class="form p-3">
                 <div class="form-row my-5">
                   <div class="col-lg-6">
@@ -77,16 +81,28 @@
                     <input type="text" class="effect-1" placeholder="Mensagem">
                     <span class="Focus-border"></span>
                   </div>
-                </div>
-                <div class="form-row pt-4">
-                  <div class="col-lg-6">
-                    <p><input type="checkbox"> Não sou um robô </p>
-                    <p><a href="./index.php"> Voltar para Conscire</a></p>
-                  </div>
-                  <div class= "offset-2 col-lg-4">
-                    <button class="btn1">ENVIAR</button>
-                  </div>
+=======
               </div>
+              <form action="http://projetos/ProjetoSquad5SPT1/Back-end/php/register_coments.php" method = "POST">
+            <div class="form p-3">
+              <div class="form-row my-5">
+                <div class="col-lg-6">
+                  <input type="text" class="effect-1" placeholder="Nome" name='nome'>
+                  <span class="Focus-border"></span>
+                </div>
+                <div class="col-lg-6">
+                  <input type="text" class="effect-1" placeholder="Sobrenome">
+                  <span class="Focus-border"></span>
+                </div>
+              </div>
+              <div class="form-row pt-5">
+                <div class="col-lg-12">
+                  <textarea name="msg" cols="60" rows="4" placeholder= "Mensagem"></textarea>
+                  <span class="Focus-border"></span>
+>>>>>>> Stashed changes
+                </div>
+              </div>
+<<<<<<< Updated upstream
               </div class="endereco">
                     <p class="text-center">Entre em contato conosco:<br>
                     Telefone: (11)3656-5562<br>
@@ -127,8 +143,69 @@
             <input type="email" placeholder="Escreva seu email aqui" id="footer-email">
             <input type="submit" value="Cadastre-se" id="footer-email-btn">
           </div>
+=======
+              <div class="form-row pt-4">
+                <div class="col-lg-6">
+                  <p><input type="checkbox"> Não sou um robô </p>
+                  <p><a href="./index.php"> Voltar para Conscire</a></p>
+                </div>
+                <div class= "offset-2 col-lg-4">
+                  <button class="btn1">ENVIAR</button>
+                </div>
+            </div>
+            </form>
+            </div class="endereco">
+                  <p class="text-center">Entre em contato conosco:<br>
+                  Telefone: (11)3656-5562<br>
+                  Endereço: Rua Conscire, 569<br>
+                  São Paulo - SP </p>
+              </div>
+          </div>
         </div>
+        <div class="container text-center bg-light">
+              <?php include_once "Coments.php";  ?>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer">
+        <div class="footer-heading footer-1">
+          <h2>O projeto</h2>
+          <a href="#">Quem somos</a>
+          <a href="#">termos de servicos</a>
+          <a href="#">contato</a>
+        </div>
+
+        <div class="footer-heading footer-1">
+          <h2>Contate-nos</h2>
+          <a href="#">Quem somos</a>
+          <a href="#">termos de servicos</a>
+          <a href="#">contato</a>
+        </div>
+
+        <div class="footer-heading footer-3">
+          <h2>Social media</h2>
+          <a href="#">Instragram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Discord</a>
+        </div>
+
+        <div class="footer-email-form">
+          <h2>Assine nossos e-mails!</h2>
+          <input type="email" placeholder="Escreva seu email aqui" id="footer-email">
+          <input type="submit" value="Cadastre-se" id="footer-email-btn">
+>>>>>>> Stashed changes
+        </div>
+      </div>
   </div>
+<<<<<<< Updated upstream
+=======
+</footer>
+>>>>>>> Stashed changes
 
   <!--Links essenciais do CDN bootstrap, jquery e javascript que faz a magia funcionar -->    
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

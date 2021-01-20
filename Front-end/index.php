@@ -107,7 +107,7 @@
         <div class="one col-lg-3 col-md-3 col-12 w-25 m-2">
           <img class="img-fluid w-90" src="./imagens/card1 quiz.svg">
           <h5 class="font-weight-bold pt-4">TEMOS QUIZ</h5>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <p><a href="./Quiz/quiz.html">Clique aqui</a></p>
       </div>
 
       <div class="one col-lg-3 col-md-3 col-12 w-25 m-2">
@@ -119,7 +119,7 @@
     <div class="one col-lg-3 col-md-3 col-12 w-25 m-2">
       <img class="img-fluid w-90 " src="./imagens/card2 audit.svg">
       <h5 class="font-weight-bold pt-4">TESTE AUDIT</h5>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      <p><a href="./audit.php">Clique aqui</a></p>
   </div>
        
       
