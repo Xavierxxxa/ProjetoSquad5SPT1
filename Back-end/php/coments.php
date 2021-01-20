@@ -4,8 +4,8 @@ require "Connection.php";
 
 $conection = mysqli_connect($servername, $username, $password, $database);
 
-$sqlSelect = "SELECT * FROM squad5.login right join  squad5.comentarios 
-on login.id = comentarios.id;";
+$sqlSelect = "SELECT * FROM squad5.cadastro right join squad5.comentario 
+on cadastro.idnome = comentario.id;";
 $stmt = $conection -> query($sqlSelect);
 
 foreach($stmt as $key => $value){
@@ -14,10 +14,10 @@ foreach($stmt as $key => $value){
     echo $value['nome'];
     echo "<br/>";
     echo "Mensagem: ";
-    echo $value['msg'];
+    echo $value['mensagem'];
     echo "<br/>";
     echo "Data: ";
-    echo $value['hora'];
+    echo $value['data'];
     echo "<hr/>";
 }
 

@@ -1,3 +1,9 @@
+<?php
+session_start();
+
+require "../Back-end/php/Connection.php";
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -41,17 +47,17 @@
                             <span class="nav__name">Perfil</span>
                         </a>
                         
-                        <a href="#" class="nav__link">
+                        <a href="./Quiz/quiz.html" class="nav__link">
                             <i class='bx bx-brain nav__icon' ></i>
                             <span class="nav__name">Quiz</span>
                         </a>
 
-                        <a href="#" class="nav__link">
+                        <a href="https://www.ted.com/talks/rod_phillips_a_brief_history_of_alcohol/transcript?language=pt-br#t-8168" class="nav__link">
                             <i class='bx bx-brain nav__icon' ></i>
                             <span class="nav__name">História das bedidas</span>
                         </a>
 
-                        <a href="#" class="nav__link">
+                        <a href="./audit.php" class="nav__link">
                             <i class='bx bx-brain nav__icon' ></i>
                             <span class="nav__name">Teste Audit</span>
                         </a>
@@ -65,18 +71,18 @@
                     </div>
                 </div>
 
-                <a href="#" class="nav__link">
+                <a href="../Back-end/php/sair.php" class="nav__link">
                     <i class='bx bx-log-out nav__icon' ></i>
                     <span class="nav__name">Sair</span>
 
-                <a href="#" class="nav__link">
+                <a href="../Back-end/php/excluirConta.php?email=<?php echo $_SESSION['email']?>" class="nav__link">
                     <i class='bx bx-log-out nav__icon' ></i>
                     <span class="nav__name">Deletar conta</span>
                 </a>
             </nav>
         </div>
 
-        <h1>Olá! Seja bem vindo(a)!</h1>
+        <h1>Olá, <?php echo $_SESSION['nome']?>. Seja bem vindo(a)!</h1>
         <div class="container">
             <div class="row">
          <!--CARD 1 - HISTORIA DAS BEBIDAS - YOUTUBE-->       

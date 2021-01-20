@@ -7,12 +7,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./Css/style.css">
 
-    <title>Login Conscire</title>
+    <title>Cadastro Conscire</title>
   </head>
 
    <!-- Header - Bootstrap com NAV formando o menu de todo o site E responsivo-->
    <header>
-
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -99,40 +98,35 @@
             </div>
             <div class="col-lg-7 px-5 pt-5">
                 <img id="logo" src="./imagens/LOOOGO 1.png" alt="Conscire">
-                <h5 class= "my-3 p-2">Entre na sua conta</h5>
-                <form>
-
-                
+                <h5 class= "my-3 p-2">Entre na sua conta</h5>      
                 <form action="../Back-end/php/SQLInsert.php" method="POST">
-
-
                     <div class="form-row">
                     <div class="col-lg-7">
-                    <input type="text"placeholder ="Nome Completo" class="form-control my-3 p-4">
-                    </div>
-                    </div>
-
-                    <div class="form-row">
-                    <div class="col-lg-7">
-                    <input type="email"placeholder ="Seu email aqui" class="form-control my-3 p-4">
+                    <input type="text" id="nome" name="nome" placeholder="Nome Completo" class="form-control my-3 p-4">
                     </div>
                     </div>
 
                     <div class="form-row">
                     <div class="col-lg-7">
-                    <input type="password"placeholder ="Digite uma senha" class="form-control my-3 p-4">
+                    <input type="email" id="email" name="email" placeholder="Seu email aqui" class="form-control my-3 p-4">
                     </div>
                     </div>
 
                     <div class="form-row">
                     <div class="col-lg-7">
-                    <input type="password"placeholder ="Confirme a senha" class="form-control my-3 p-4">
+                    <input type="password" name="senha" id="senha" placeholder="Digite uma senha" class="form-control my-3 p-4">
                     </div>
                     </div>
 
                     <div class="form-row">
                     <div class="col-lg-7">
-                    <button type="button" class="btn1 mt-3 mb-5">Cadastrar</button>
+                    <input type="password" name="confirme" placeholder="Confirme a senha" class="form-control my-3 p-4">
+                    </div>
+                    </div>
+
+                    <div class="form-row">
+                    <div class="col-lg-7">
+                    <button type="submit" class="btn1 mt-3 mb-5">Cadastrar</button>
                     </div>
                     </div>
 
@@ -142,41 +136,41 @@
             </div>
         </div>
     </div>
-
+</section>
     <!--FOOTER
 -->
    
 <div class="footer-container">
-  <div class="footer">
-    <div class="footer-heading footer-1">
-      <h2>O projeto</h2>
-      <a href="#">Quem somos</a>
-      <a href="#">termos de servicos</a>
-      <a href="#">contato</a>
-    </div>
-  
-    <div class="footer-heading footer-1">
-      <h2>Contate-nos</h2>
-      <a href="#">Quem somos</a>
-      <a href="#">termos de servicos</a>
-      <a href="#">contato</a>
-    </div>
-  
-    <div class="footer-heading footer-3">
-      <h2>Social media</h2>
-      <a href="#">Instragram</a>
-      <a href="#">Facebook</a>
-      <a href="#">Discord</a>
-    </div>
-  
-    <div class="footer-email-form">
-      <h2>Assine nossos e-mails!</h2>
-      <input type="email" placeholder="Escreva seu email aqui" id="footer-email">
-      <input type="submit" value="Cadastre-se" id="footer-email-btn">
-    </div>
-  
+<div class="footer">
+  <div class="footer-heading footer-1">
+    <h2>O projeto</h2>
+    <a href="#about">Quem somos</a>
+    <a href="#">termos de servicos</a>
+    <a href="./Contato.php">contato</a>
   </div>
+
+  <div class="footer-heading footer-1">
+    <h2>Contate-nos</h2>
+    <a href="#about">Quem somos</a>
+    <a href="#">termos de servicos</a>
+    <a href="./Contato.php">contato</a>
   </div>
+
+  <div class="footer-heading footer-3">
+    <h2>Social media</h2>
+    <a href="#">Instragram</a>
+    <a href="#">Facebook</a>
+    <a href="#">Discord</a>
+  </div>
+
+  <div class="footer-email-form">
+    <h2>Assine nossos e-mails!</h2>
+    <input type="email" placeholder="Escreva seu email aqui" id="footer-email">
+    <input type="submit" value="Cadastre-se" id="footer-email-btn">
+  </div>
+
+</div>
+</div>
      
     
 

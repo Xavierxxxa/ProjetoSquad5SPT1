@@ -107,19 +107,19 @@
         <div class="one col-lg-3 col-md-3 col-12 w-25 m-2">
           <img class="img-fluid w-90" src="./imagens/card1 quiz.svg">
           <h5 class="font-weight-bold pt-4">TEMOS QUIZ</h5>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <p>E ai, já tomou um gole de consciência no nosso site? Entao venha responder nosso Quiz, marcar muitos pontos e escalar nosso ranking!.</p>
       </div>
 
       <div class="one col-lg-3 col-md-3 col-12 w-25 m-2">
         <img class="img-fluid w-90" src="./imagens/ranking.svg">
         <h5 class="font-weight-bold pt-4">RANKINGS</h5>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <p>Você consegue ver o seu ranking de pontos e arquivos lidos dentre todos os usuários.</p>
     </div>
 
     <div class="one col-lg-3 col-md-3 col-12 w-25 m-2">
       <img class="img-fluid w-90 " src="./imagens/card2 audit.svg">
       <h5 class="font-weight-bold pt-4">TESTE AUDIT</h5>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      <p>O AUDIT - Alcool Use Disorders Identification Test é um instrumento de avaliação desenvolvido pela Organização Mundial de Saúde (OMS).</p>
   </div>
     </div>
     </div>

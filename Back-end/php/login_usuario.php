@@ -1,13 +1,6 @@
 <?php
 
 session_start();
-#Com esta funcao nos estamo iniciando uma secao ou seja, vou inicicar algumas variaveis superglobais, onde eu 
-#posso usar em outros arquivos.
-
-#echo "<pre>";
-#A tag pre e como se fosse o modulo pprint no python, ou seja, deixa uma melhor visualizacao do array.
-#print_r($_POST);
-#echo "</pre>";
 
 require "Connection.php";
 
@@ -17,7 +10,7 @@ $senha = md5($_POST['senha']);
 if (strlen($email) >= 3 and strlen($senha) >= 3){
     $conection = mysqli_connect($servername, $username, $password, $database);
     if ($conection == true){
-        $SQLSelect = "SELECT EMAIL, SENHA, NOME FROM login WHERE EMAIL = '$email' and SENHA = '$senha'";
+        $SQLSelect = "SELECT EMAIL, SENHA, NOME FROM cadastro WHERE EMAIL = '$email' and SENHA = '$senha'";
         $SQLSelectResult = mysqli_query($conection, $SQLSelect);
         
         $contador = 0;
@@ -33,10 +26,6 @@ if (strlen($email) >= 3 and strlen($senha) >= 3){
                 $_SESSION['nome'] = $rowResult[$contador][2];
                 #Nesta linha de cima nos estamos atribuindo o valor obtido na consulta em uma variavel
                 #superglobal.
-
-                #echo "<pre>";
-                #print_r($rowResult);
-                #echo "</pre>";
 
                 echo "<script> 
                         alert('Login Realizado com sucesso!');

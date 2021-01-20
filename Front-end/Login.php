@@ -83,7 +83,7 @@
                         </div>
                     </div>
                     <p>Não possui uma conta?<br> <a href="./cadastro.php"> Registre-se aqui</a></p>
-                    <p><a href="./index.html"> Voltar para Conscire</a></p>
+                    <p><a href="./index.php"> Voltar para Conscire</a></p>
                 </form>
             </div>
         </div>
