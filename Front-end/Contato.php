@@ -99,15 +99,15 @@
         <div class="footer">
           <div class="footer-heading footer-1">
             <h2>O projeto</h2>
-            <a href="#">Quem somos</a>
-            <a href="#">termos de servicos</a>
-            <a href="#">contato</a>
+            <a href="./index.php #about">Quem somos</a>
+            <a href="/index.php #cards">termos de servicos</a>
+            <a href="./Contato.php">contato</a>
           </div>
           <div class="footer-heading footer-1">
             <h2>Contate-nos</h2>
-            <a href="#">Quem somos</a>
-            <a href="#">termos de servicos</a>
-            <a href="#">contato</a>
+            <a href="./index.php #about">Quem somos</a>
+            <a href="/index.php #cards">termos de servicos</a>
+            <a href="./Contato.php">contato</a>
           </div>
           <div class="footer-heading footer-3">
             <h2>Social media</h2>

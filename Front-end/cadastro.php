@@ -14,7 +14,7 @@
    <header>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="./index.php">
             <img id="logo" src="./imagens/logo.png" alt="Conscire">
           </a>
 
