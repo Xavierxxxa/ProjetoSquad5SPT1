@@ -1,5 +1,4 @@
 module.exports = function (app){
-    
     // SQLInsert.php ----------------------------------- // excluirConta.php
 
     app.post('/cadastrado/envia', function(req,res){
@@ -38,3 +37,4 @@ module.exports = function (app){
         });
     });    
 }
+
